@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>CodingElite</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="http://127.0.0.1:5500/home.html">CodingElite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="http://127.0.0.1:5500/home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://127.0.0.1:5500/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            C Tutorials
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/introduction.html">introduction</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/branching.html">Branching Statements</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/looping.html">looping statements</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/function.html">Function</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/array.html">Array</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/string.html">string</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/pointer.html">pointers</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/structure.html">structures</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/blog.html">More Topics</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://127.0.0.1:5500/book.html">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://127.0.0.1:5500/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://127.0.0.1:5500/contact.html">Contact us</a>
+                    </li>
+                   
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-light">
+    <div class="container bg-c ">
+        <h1 class="hed hedi-h1"><strong>introduction to C</strong></h1>
+        <h3><strong>introduction and history of c</strong></h3>
+        <p>C is a middle-level procedure oriented programming language, used in general purpose programming, developed
+            by Dennis Ritchie at AT&T Bell labs, USA between 1969 and 1973. </p>
+        <ul>
+            <li class="list-s">“C” became popular because of its reliability, simple and easy to use. </li>
+            <li class="list-s">It was friendly, capable and reliable.</li>
+            <li class="list-s">ALGOL 60 was developed and did not become popular because it was too general and too
+                abstract. </li>
+            <li class="list-s">They developed “CPU” (Combined Programming Language).</li>
+            <li>It can be compiled on a variety of computer platforms.</li>
+            <li class="list-s">Next as it could not come up to make ALGOL 60 better one they moved to “BCPL” (Basic
+                Combines Programming Language. Developed by martin Richard Cambridge University). </li>
+            <li class="list-s">. At the same time a language called “B” written by ken Thompson at AT & T‟S. Bell
+                laboratories as a further simplification of BCPL. </li>
+        </ul>
+        <h5>C Programming Language Version History:</h5>
+        <ul>
+            <li>1972-&nbsp; Traditional C- Denis Richie</li>
+            <li>1978- &nbsp;K & R C &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; - Kernighan and Richie</li>
+            <li>1989- &nbsp;ANSI C &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; - ANSI Committee</li>
+            <li>1990- &nbsp;ANSI/ISO C&nbsp; - ISO Committee</li>
+            <li>1999- &nbsp;C 99 &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Standardization Committee
+            </li>
+        </ul>
+        <h5>Importance of C language: </h5>
+        <ol>
+            <li>In 1988, the American National Standards Institute (ANSI) has formalized the C language.</li>
+            <li>C was invented to write UNIX operating system.</li>
+            <li>UNIX is considered to be one of the most robust and secured operating system. C was used to write it, So
+                C is very efficient that it can be used to create an OS.</li>
+            <li>C is a successor of ‘Basic Combined Programming Language’ (BCPL) called B language.</li>
+            <li>Linux OS, PHP and MySQL are written in C.</li>
+            <li>C has been written in assembly language.</li>
+            <li>C has high flexibility means a function can be written and can be used so many times at so many places.
+                It increases the modularity.</li>
+            <li>Rich set of library support.</li>
+            <li>It can be compiled on a variety of computer platforms.</li>
+            <li>The C language is used for developing system applications that forms a major portion of operating
+                systems such as Windows, UNIX and Linux. Below are some examples <br><strong> where C language is being
+                    used:</strong><br>
+                <ul>
+                    <li class="list-st">a) Database systems</li>
+                    <li class="list-st">b) Graphics packages</li>
+                    <li class="list-st">c) Word processors</li>
+                    <li class="list-st">d) Spreadsheets</li>
+                    <li class="list-st">e) Operating system development</li>
+                    <li class="list-st">f) Compilers and Assemblers</li>
+
+        </ol>
+        </li>
+        </ul>
+        <h5>character Set:</h5>
+        <ol>
+            <li>A character represents any alphabet, digit, special character used to form words, numbers and
+                expressions</li>
+            <li>While space characters are ignored by ‘ C ’ compiler in cases where they are not part of a string
+                constant.</li>
+            <li>C character set can be divided into following groups : <br>
+            <li class="list-st"><b>
+                    Alphabets</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: A……..Z
+                to a……z. </li>
+            <li class="list-st"><b>Digits
+                </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                0……….9.</li>
+            <li class="list-st"><b> Special character</b>&nbsp;: ~ , # ,$ , % ,^ ,* , & , + , -,\ , | , ( , ) etc.</li>
+            </li>
+        </ol>
+        <h5><b> C Tokens or Lexical units:</b></h5>
+        <p>Smallest individual units of a ‘c’ program are known as tokens. </p>
+
+    
+
+
+
+    
+        <div class="row">
+            <div class="col-12 text-center section-head">
+
+            </div>
+            <div class="col-md-4 ">
+                <div class="extra-div zoom1">
+                    <h6>C tokens are of following types. They are,</h6>
+                    <ul>
+                        <li>Keywords: Example: int, continue, float etc.</li>
+                        <li>Identifiers: Example: main, total, printf etc.</li>
+                        <li>Constants: Example: 10, 20, 21.21 etc.</li>
+                        <li>Strings: Example: “sum”, “Amol” etc.</li>
+                        <li>Special symbols or separators: Example: (), {}, ; etc.</li>
+                        <li>Operators: Example: +, / ,- ,* etc. </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 second-extra-div">
+                <div class="extra-div ">
+      
+  <pre class="pre-bl">        
+               void main() 
+               {
+               int a,b,sum;
+               a=10;&nbsp;b=11;
+               sum=a+b;
+               printf (“Sum = %d \n”,sum);
+               getch();
+               } 
+           </pre>
+                </div>
+            </div>
+            <div class="col-md-4 second-extra-div">
+                <div class="extra-div zoom1">
+
+                    <p class="pad-pr">Here in above code, a, b, sum, +, printf, main all are tokens also known as
+                        lexical units of a program</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-8">
+            <img class="img-fluid img-p img-intro" src="img/C tokens.png" alt="">
+        </div>
+    
+
+        <h5>Keywords in C language:</h5>
+        <ol>
+            <li>Keywords are nothing but pre-defined or reserved words in a C language.</li>
+            <li>Each keyword is meant to perform a specific function in a C program.</li>
+            <li>Since keywords are reserved words for compiler, they can’t be used as variable name.</li>
+            <li>C language supports 32 keywords which are given below. </li>
+            <li> C99 version adds 5 more keywords.</li>
+            <li>Most of the keywords are assigned for Data Types, Storage Classes, Control Statements etc.</li>
+        </ol>
+        <div class="table-responsive">
+            <table summary="List of all keywords used in C programming language." border="0">
+                <thead>
+                    <tr>
+                        <th colspan="4">Keywords in C Programming</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#auto">auto</a></td>
+                        <td><a href="#break_continue">break</a></td>
+                        <td><a href="#switch_case_default">case</a></td>
+                        <td><a href="#char">char</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#const">const</a></td>
+                        <td><a href="#break_continue">continue</a></td>
+                        <td><a href="#switch_case_default">default</a></td>
+                        <td><a href="#do_while">do</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#double_float">double</a></td>
+                        <td><a href="#if_else">else</a></td>
+                        <td><a href="#enum">enum</a></td>
+                        <td><a href="#extern">extern</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#double_float">float</a></td>
+                        <td><a href="#for">for</a></td>
+                        <td><a href="#goto">goto</a></td>
+                        <td><a href="#if_else">if</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#int">int</a></td>
+                        <td><a href="#short_long_signed_unsigned">long</a></td>
+                        <td><a href="#register">register</a></td>
+                        <td><a href="#return">return</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#short_long_signed_unsigned">short</a></td>
+                        <td><a href="#short_long_signed_unsigned">signed</a></td>
+                        <td><a href="#sizeof">sizeof</a></td>
+                        <td><a href="#static">static</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#struct">struct</a></td>
+                        <td><a href="#switch_case_default">switch</a></td>
+                        <td><a href="#typedef">typedef</a></td>
+                        <td><a href="#union">union</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#short_long_signed_unsigned">unsigned</a></td>
+                        <td><a href="#void">void</a></td>
+                        <td><a href="#volatile">volatile</a></td>
+                        <td><a href="#do_while">while</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    
+        <h5>Identifiers in C language:</h5>
+        <p>Names given to identify variables, functions, constants are called as identifiers. <br>
+            Example: a, b, sum are a names given to integer variables are called identifiers in above example. <br>
+            main, printf are the names given to function are called identifiers in above example.
+        </p>
+        <h6>Rules for constructing identifier name in C:</h6>
+        <ol>
+            <li>First character should be an alphabet or underscore.</li>
+            <li>Succeeding characters might be digits or letter.</li>
+            <li>Punctuation and special characters are not allowed except underscore.</li>
+            <li>Identifiers should not be keywords.</li>
+        </ol>
+
+    
+        <h5>C Constants: </h5>
+
+        <p>These are also like normal variables. But, only difference is, their values cannot be modified by the program
+            once they are defined.</p>
+        <ul>
+            <li>Constants refer to fixed values. They are also called as literals.</li>
+            <li>Constants may be belonging to any of the data type.</li>
+            <li><b>Syntax:</b>
+            <li class="list-st">const data_type variable_name; // In ANSI C language</li>
+            <li class="list-st">#define Constant_name value &nbsp; // In traditional C language </li>
+            </li>
+
+        </ul>
+        <h5 class><b>Structure of C programming:</b></h5>
+
+
+   
+        <div class="row">
+
+
+            <div class="col-md-8 ">
+                <div class="extra-div zoom1">
+                    <table>
+                        <tr>
+                            <th class="tabal-b">Documentation section</th>
+
+                        </tr>
+                        <tr>
+                            <td class="tabal-b">Header files section</td>
+
+                        </tr>
+                        <tr>
+                            <td class="tabal-b">Symbolic constants section</td>
+
+                        </tr>
+                        <tr>
+                            <td class="tabal-b">Global variables declaration</td>
+
+                        </tr>
+                        <tr>
+                            <td class="tabal-b">Function declaration or prototype</td>
+
+                        </tr>
+                        <tr>
+                            <td class="tabal-b">// main function section
+                                return_type main()
+                                {
+                                Variable declaration or initialization
+                                Executable statements
+                                }
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="tabal-b">//user-defined function
+                                return_type Function_name (list of arguments)
+                                {
+                                Body of function
+                                }
+                            </td>
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    
+        <h5><b>Data types in C</b></h5>
+        <ul>
+            <li>• C data types are defined as the data storage format that a variable can store a data to perform a
+                specific operation.</li>
+            <li>• Data types are used to define a variable before to use in a program.</li>
+            <li>• Size of variable, constant and array are determined by data types.</li>
+            <li>• Static memory management is function of compiler so compiler must know how many bytes are reserved for
+                particular data type and which type of value we should store in that particular data type. That
+                information about variable is given by data type to compiler.</li>
+            <li>• On other hand storage classes gives the information about on which memory partition we have to store
+                variable value to the compiler.</li>
+            <li>• Memory allocation for variable is done by compiler and for that purpose compiler must know how many
+                bytes are required to store that variable and that information is given by data type. And where to store
+                that variable on RAM because RAM having four logical partitions that is stack, heap, static or global
+                partition is given by storage class to compiler.</li>
+            <h6><b>Syntax</b>
+            </h6>
+            <h6><b>[Storage class] &lt;Data Type&gt; Name_of_variable ;</b></h6>
+        </ul>
+
+    
+
+        <div class="col-md-6">
+            <img src="img/Datatypes.png" alt="" class="img-fluid img-p">
+        </div>
+    
+    
+        <h6><b>Fundamental/Basic/Primitive/Primary data types in C:</b></h6>
+        <br>
+        <h6><b>1.integer data type:</b></h6>
+        <ol>
+            <li>Integer data type allows a variable to store numeric values.</li>
+            <li>“int” keyword is used to refer integer data type.</li>
+            <li>The storage size of int data type is 2 or 4 or 8 byte.</li>
+            <li>It varies depend upon the processor in the CPU that we use. If we are using 16 bit processor, 2 byte (16
+                bit) of memory will be allocated for int data type.</li>
+            <li>Like wise, 4 byte (32 bit) of memory for 32 bit processor and 8 byte (64 bit) of memory for 64 bit
+                processor is allocated for int datatype.</li>
+            <li>Depends on version if traditional C language int data type’s size is 2 bytes and in ANSI C int data type
+                requires 4 bytes. </li>
+            <li>int (4 byte) can store values from -2,147,483,648 to +2,147,483,647.</li>
+            <li>int (2 byte) can store values from -32,768 to +32,767.</li>
+        </ol>
+    
+    
+        <h6><b>2.Character data type:</b></h6>
+        <ol>
+            <li>Character data type allows a variable to store only one character.</li>
+            <li>Storage size of character data type is 1. We can store only one character using character data type.
+            </li>
+            <li>“char” keyword is used to refer character data type.</li>
+            <li>For example, ‘S’ can be stored using char data type. You can’t store more than one character using char
+                data type.</li>
+
+        </ol>
+
+        <h6><b>3 Floating point data type:</b></h6>
+        <p>Floating point data type consists of 2 types. They are,</p>
+        <ol>
+            <li>float- Storage size of float data type is 4. This also varies depend upon the processor in the CPU as
+                “int” data type.</li>
+            <li>double-•Double data type is also same as float data type which allows up-to 10 digits after decimal.
+                The range for double data type is from 1E–37 to 1E+37.
+            </li>
+        </ol>
+    
+
+        <h6><b>Derived data types in C:</b></h6>
+        <p>A derived types are inherited from fundamental or user defined data types like int, float, structure etc.
+            Using derived types, an infinite variety of new types can be formed.
+            Examples: Array, pointer, function etc.
+        </p>
+        <p>A pointer is a variable which stores the address of another variable. Array is a collection of similar data
+            elements.</p>
+
+    
+        <h6><b>User defined Data types in C:</b></h6>
+        <p>Sometimes, a basic set of data types defined in C language are insufficient for our application. Programmer
+            can create their own data types as per application needs are called as user defined data types. </p>
+        <p>Examples: Structure, union, enum, typedef etc.</p>
+    
+        <h6><b>void data type in C:</b></h6>
+        <p>Void is an empty data type that has no value. <br>This can be used as return type of functions and void
+            pointers means generic pointers.</p>
+    
+
+        <h5><b>Modifiers in C:</b></h5>
+        <ul>
+            <li>The amount of memory space to be allocated for a variable by data type is modified by modifiers.</li>
+            <li>Modifiers are prefixed with basic data types to modify (either increase or decrease) the amount of
+                storage space allocated to a variable.</li>
+            <li>For example, storage space for int data type is 4 byte for 32 bit processor. We can increase the range
+                by using long int which is 8 byte. We can decrease the range by using short int which is 2 byte.</li>
+            <li>There are 5 modifiers available in C language. They are,
+                <ol>
+                    <li>short</li>
+                    <li>long</li>
+                    <li>signed</li>
+                    <li>unsigned</li>
+                </ol>
+            </li>
+
+        </ul>
+        <p>Signed means that variable can take both positive and negative values and unsigned means only the positive
+            values. Int means data type is by default signed int and unsigned int data type is unsigned int. Last bit in
+            the int data type is reserved for sign, if last bit is 0 then that is positive number and if last bit
+            contains 1 then that is negative number.
+            Below table gives the detail about the storage size of each C basic data type in 16 bit processor.
+            <br>Please keep in mind that storage size and range for int and float data type will vary depend on the CPU
+            processor and versions of C (8, 16, 32 and 64 bit).
+        </p>
+    
+
+    
+        <div class="table-responsive">
+            <table summary="List of the data types and the rages." border="0">
+
+                <table>
+                    <tr>
+                        <th class="tabal-b">sr.no</th>
+                        <th class="tabal-b">C data type</th>
+                        <th class="tabal-b">Storage size</th>
+                        <th class="tabal-b">Range</th>
+
+                    </tr>
+                    <tr>
+                        <td class="tabal-b">1</td>
+                        <td class="tabal-b">char</td>
+                        <td class="tabal-b">1</td>
+                        <td class="tabal-b">-127 to 127</td>
+                    </tr>
+                    <tr>
+                        <td class="tabal-b">2</td>
+                        <td class="tabal-b">int</td>
+                        <td class="tabal-b">2</td>
+                        <td class="tabal-b">–32,768 to 32,767</td>
+
+                    </tr>
+                    <tr>
+                        <td class="tabal-b">3</td>
+                        <td class="tabal-b">float</td>
+                        <td class="tabal-b">4</td>
+                        <td class="tabal-b">1E–37 to 1E+37 with six digits of precision</td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="tabal-b">4</td>
+                        <td class="tabal-b">double</td>
+                        <td class="tabal-b">8</td>
+                        <td class="tabal-b">1E–37 to 1E+37 with ten digits of precision</td>
+                    </tr>
+                    <tr>
+                        <td class="tabal-b">5</td>
+                        <td class="tabal-b">long double</td>
+                        <td class="tabal-b">10</td>
+                        <td class="tabal-b">1E–37 to 1E+37 with ten digits of precision</td>
+                    </tr>
+                    <tr>
+                        <td class="tabal-b">6</td>
+                        <td class="tabal-b">long int</td>
+                        <td class="tabal-b">4</td>
+                        <td class="tabal-b">–2,147,483,647 to 2,147,483,647</td>
+                    </tr>
+                    <tr>
+                        <td class="tabal-b">7</td>
+                        <td class="tabal-b">short int</td>
+                        <td class="tabal-b">2</td>
+                        <td class="tabal-b">–32,768 to 32,767</td>
+                    </tr>
+                    <tr>
+                        <td class="tabal-b">8</td>
+                        <td class="tabal-b">unsigned short int </td>
+                        <td class="tabal-b">2</td>
+                        <td class="tabal-b">0 to 65,535</td>
+                    </tr>
+                    <tr>
+                        <td class="tabal-b">9</td>
+                        <td class="tabal-b">signed short int</td>
+                        <td class="tabal-b">2</td>
+                        <td class="tabal-b">–32,768 to 32,767</td>
+                    </tr>
+                    <tr>
+                        <td class="tabal-b">10</td>
+                        <td class="tabal-b">long long int</td>
+                        <td class="tabal-b">8</td>
+                        <td class="tabal-b">–(2power(63) –1) to 2(power)63 –1</td>
+                    </tr>
+                    <tr>
+                        <td class="tabal-b">11</td>
+                        <td class="tabal-b">signed long int</td>
+                        <td class="tabal-b">4</td>
+                        <td class="tabal-b">–2,147,483,647 to 2,147,483,647</td>
+                    </tr>
+                    <tr>
+                        <td class="tabal-b">12</td>
+                        <td class="tabal-b">unsigned long int</td>
+                        <td class="tabal-b">4</td>
+                        <td class="tabal-b">0 to 4,294,967,295</td>
+                    </tr>
+                    <tr>
+                        <td class="tabal-b">13</td>
+                        <td class="tabal-b">unsigned long long int</td>
+                        <td class="tabal-b">8</td>
+                        <td class="tabal-b">2(power)64 –1</td>
+                    </tr>
+
+                </table>
+        </div>
+
+
+    
+       <a href="http://127.0.0.1:5500/introduction.html"> <button type="button" class="btn btn-primary btn-m"> &lt;&lt;Previous</button> </a>
+      <a href="http://127.0.0.1:5500/branching.html"> <button type="button" class="btn  btn-primary btn-m btn-r">Next &gt;&gt;</button></a> 
+
+
+    </div>
+</div>
+   
+    <footer class="page-footer font-small blue navbar-dark bg-light footer-ptt">
+        <div class="footer-copyright text-center py-3">
+            Designed and built with all the love in the world by the <a href="http://127.0.0.1:5500/about.html">CodingElite</a>.&nbsp;| <a class="color-b" href="http://127.0.0.1:5500/privacyPolicy.html">Privacy policy</a> | <a class="color-b" href="http://127.0.0.1:5500/contact.html">Contact us</a>
+           
+        </div>
+      </footer>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

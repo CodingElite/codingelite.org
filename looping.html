@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>TechnicalAB</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="http://127.0.0.1:5500/home.html">TechnicalAB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="http://127.0.0.1:5500/home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://127.0.0.1:5500/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            C Tutorials
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/introduction.html">introduction</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/branching.html">Branching Statements</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/looping.html">looping statements</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/function.html">Function</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/array.html">Array</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/string.html">string</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/pointer.html">pointers</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/structure.html">structures</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/blog.html">More Topics</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://127.0.0.1:5500/book.html">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://127.0.0.1:5500/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://127.0.0.1:5500/contact.html">Contact us</a>
+                    </li>
+                   
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+<div class="bg-light">
+    <div class="container bg-c">
+        <h1 class="hed hedi-h1"><strong> Looping statements</strong></h1>
+   
+        <h3>Looping statements in C</h3>
+        <p>Looping statement are the statements execute one or more statement again and again several number of times. <br>  Lopping sattements are used when check same condition number of times.
+        </p>
+        <h5><b>Looping statements are as follows:</b></h5>
+        <ol>
+            <li><b> while </b></li>
+            <li><b> do while</b></li>
+            <li><b> for </b></li>
+        </ol>
+    
+
+    
+       
+        <h4><b>1.&nbsp; while loop</b></h4>
+        <h5>syntax of while loop:</h5>
+        <div class="row">
+            <div class="col-md-6">
+                <pre class="pre-bl">
+                    while( condition ) 
+                    { 
+                    statements to be executed	//Body of loop;
+                    } 
+                </pre>
+            </div>
+        </div>
+       
+        <p>in "while loop" check the condition if the condition is true then the body of the while loop is executed, and again check the condition. the while loop is executd until the condition gets false.</p>
+
+  
+        <h5>Flowchart for the while loop:</h5>
+        <div class="col-md-6">
+            <img src="img/While loop.png" alt="" class="img-fluid img-p">
+        </div>
+    
+        <h5>Sample program</h5>
+        <h6>1.Print the sum of the frist 10 numbers.</h6>
+        <div class="col-md-8">
+            <pre class="pre-bl" title="">
+     <span class="hljs-meta">
+              
+         <span class="hljs-meta-keyword">#include&lt;stdio.h&gt;</span> 
+         <span class="hljs-meta-keyword">#include&lt;conio.h&gt;</span> 
+     </span>
+         void main()
+         {
+           int n,sum;
+           n=10;
+           sum=0;
+          while(n<=10)
+           {
+              sum=sum+n;
+           }    
+
+           printf("Sum of frist 10 natural numbers  is %d”, sum);
+          getch();
+        }
+         
+     </pre>
+     <p><b>Output-</b></p>
+     <pre  class="pre-bl" title="">
+         sum of frist 10 natural numbers is 55 
+          </pre>
+        </div>
+    
+        <h6>2.Implement a program to find sum of digits of a number using while loop.</h6>
+        <div class="col-md-8">
+            <pre  class="pre-bl" title="">
+     <span class="hljs-meta">
+              
+         <span class="hljs-meta-keyword">#include&lt;stdio.h&gt;</span> 
+         <span class="hljs-meta-keyword">#include&lt;conio.h&gt;</span> 
+     </span>
+         void main()
+         {
+           int n,sum;
+           sum=0;
+           printf("Enter the number\n");
+           scanf("%d",&n;)
+          while(n!=0)
+           {
+              rem=n%10; 
+              sum=sum+rem;
+              n=n/10;
+           }    
+
+           printf("Sum of digit of number is %d”, sum);
+          getch();
+        }
+         
+     </pre>
+     <p><b>Output-</b></p>
+     <pre  class="pre-bl" title="">
+         Enter the number
+         123
+         Sum of digit of number is 6 
+          </pre>
+        </div>
+  
+
+        <h4><b>2.&nbsp;do while loop</b></h4>
+        <h5>syntax of do while loop:</h5>
+        <div class="row">
+            <div class="col-md-6">
+                <pre  class="pre-bl">
+                do 
+                { 
+                Statements	//Body of loop; 
+                } while ( condition ); 
+                </pre>
+            </div>
+        </div>
+      
+        <p>in "do while loop" frist time the body of loop get executed and then check the condition if condition is true the body of loop again executed. body of loop get executed until yhe condition get false. the difference between while and do while loop is in do while loop body of loop executed at least once even als condition is false.</p>
+
+  
+        <h5>Flowchart for the do while loop:</h5>
+        <div class="col-md-6">
+            <img src="img/do While loop.png" alt="" class="img-fluid img-p">
+        </div>
+
+        <h5>Sample program</h5>
+        <h6>1.Program to print table for the given number using do while loop</h6>
+        <div class="col-md-8">
+            <pre  class="pre-bl" title="">
+     <span class="hljs-meta">
+              
+         <span class="hljs-meta-keyword">#include&lt;stdio.h&gt;</span> 
+         <span class="hljs-meta-keyword">#include&lt;conio.h&gt;</span> 
+     </span>
+        void main()
+        {    
+           int i=1,n;    
+           printf("Enter a number\n ");    
+           scanf("%d",&n);   
+           printf("The table of %d is\n"n); 
+           do{    
+           printf("%d \n",(n*i));    
+           i++;    
+           }while(i<=10);    
+           getch();  
+        }    
+         
+     </pre>
+     <p><b>Output-</b></p>
+     <pre  class="pre-bl" title="">
+         Enter a number
+         5
+         The table of 5 is
+         5
+         10
+         15
+         20
+         25
+         30
+         35
+         40
+         45
+         50
+
+        </pre>
+        </div>
+
+
+        <h6>2.Write a program to calculate the sum of digits in given number using do while loop. </h6>
+        <div class="col-md-8">
+            <pre  class="pre-bl" title="">
+     <span class="hljs-meta">
+              
+         <span class="hljs-meta-keyword">#include&lt;stdio.h&gt;</span> 
+         <span class="hljs-meta-keyword">#include&lt;conio.h&gt;</span> 
+     </span>
+          void main()
+           {
+            int num,r,sum=0;
+            clrscr();
+            printf("enter any number");
+            scanf("%d",&num);
+            do{
+            r=num%10;
+            sum=sum+r;
+            num=num/10;
+              }while(num!=0);
+            printf("sum of digits =%d",sum);
+            getch();
+          }
+     
+          }
+         
+     </pre>
+     <p><b>Output-</b></p>
+     <pre  class="pre-bl" title="">
+         enter eny number
+         123
+         Sum of digits=6 
+          </pre>
+        </div>
+  
+
+        <h4><b>3.&nbsp; for loop</b></h4>
+        <h5>syntax of for loop:</h5>
+        <div class="row">
+            <div class="col-md-6">
+         <pre  class="pre-bl">
+             for(initialization; condition; increment/decrement statement) 
+             { 
+                 Body of for loop; 
+             } 
+         </pre>
+            </div>
+        </div>
+        <p>In "for loop" The initialization statement is executed only once.Then, the condition is evaluated. If condition is false (0), for loop is terminated. But if the condition is true (nonzero), codes inside the body of for loop is executed and then increment or decrement statement is executed and again condition is checked untill the condition is false body of for loop get executed. All expressions or statement in the for loop are optional.  at the end of the for loop semicolon is there then for loop not executed.  </p>
+
+ 
+        <h5>Flowchart for the for loop:</h5>
+        <div class="col-md-6">
+            <img src="img/for loop.png" alt="" class="img-fluid img-p">
+        </div>
+
+
+        <h5>Sample program</h5>
+        <h6>1.Print the frist 10 even numbers.</h6>
+        <div class="col-md-8">
+            <pre  class="pre-bl" title="">
+     <span class="hljs-meta">
+              
+         <span class="hljs-meta-keyword">#include&lt;stdio.h&gt;</span> 
+         <span class="hljs-meta-keyword">#include&lt;conio.h&gt;</span> 
+     </span>
+         void main()
+         {
+           int i,n;
+           printf("frist 10 even natural numbers are\n");
+           for(i=1;i&lt;21;i++)
+            {  
+               if(i%2==0)
+               {
+                printf("%i\n",i);
+               }
+            }    
+           getch();
+        }
+         
+     </pre>
+     <p><b>Output-</b></p>
+     <pre class="pre-bl" title="">
+         frist 10 even numbers are
+         2
+         4
+         6
+         8
+         10
+         12
+         14
+         16
+         18
+         20
+          </pre>
+        </div>
+
+        <h6>2.Implement program to check the entered number is prime or not prime.</h6>
+        <div class="col-md-8">
+            <pre class="pre-bl" title="">
+     <span class="hljs-meta">
+              
+         <span class="hljs-meta-keyword">#include&lt;stdio.h&gt;</span> 
+         <span class="hljs-meta-keyword">#include&lt;conio.h&gt;</span> 
+     </span>
+         void main()
+         {
+           int n,i,k;
+           k=0;
+           printf("Enter the number for checking prime or not prime\n");
+           scanf("%d",&n;)
+           for(i=2;i&lt;n/2;i++)
+           {
+              if(n%i==0)
+              {
+                  k=1;
+              }
+           } 
+           if(k==0)
+           {
+               printf("The entered number is prime");
+           }   
+           else
+           {
+               printf("The entered number is not prime");
+           }
+
+           printf("Sum of digit of number is %d”, sum);
+          getch();
+        }
+         
+     </pre>
+     <p><b>Output-</b></p>
+     <pre class="pre-bl" title="">
+        Enter the number for checking prime or not prime
+        37
+        The entered number is prime 
+          </pre>
+        </div>
+    
+        <h5>Examples For Practice</h5>
+        <ol>
+            <li>Write a c program to print "Hello" 10 times on console using do while loop.</li>
+            <li>Write a c program to print sum of first 10 odd natural numbers using do while loop.</li>
+            <li>Write a program to check number is Armstrong or not using for loop.</li>
+            <li>Write a c program to reverse given number using while loop.</li>
+        </ol>
+
+
+
+    
+    <a href="http://127.0.0.1:5500/looping.html"> <button type="button" class="btn btn-primary btn-m"> &lt;&lt;Previous</button> </a>
+    <a href="http://127.0.0.1:5500/function.html"> <button type="button" class="btn  btn-primary btn-m btn-r">Next &gt;&gt;</button></a> 
+
+
+  </div>
+</div>
+ 
+  <footer class="page-footer font-small blue navbar-dark bg-light footer-ptt">
+      <div class="footer-copyright text-center py-3">
+          Designed and built with all the love in the world by the <a href="http://127.0.0.1:5500/about.html">TechnicalAB team</a>.&nbsp;| <a class="color-b" href="http://127.0.0.1:5500/privacyPolicy.html">Privacy policy</a> | <a class="color-b" href="http://127.0.0.1:5500/contact.html">Contact us</a>
+         
+      </div>
+    </footer>
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+  -->
+</body>
+
+</html>

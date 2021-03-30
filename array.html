@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>CodingElite</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="http://127.0.0.1:5500/home.html">CodingElite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="http://127.0.0.1:5500/home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://127.0.0.1:5500/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            C Tutorials
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/introduction.html">introduction</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/branching.html">Branching Statements</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/looping.html">looping statements</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/function.html">Function</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/array.html">Array</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/string.html">string</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/pointer.html">pointers</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/structure.html">structures</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/blog.html">More Topics</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://127.0.0.1:5500/book.html">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://127.0.0.1:5500/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://127.0.0.1:5500/contact.html">Contact us</a>
+                    </li>
+                   
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+<div class="bg-light">
+    <div class="container bg-c">
+        <h1 class="hed hedi-h1"><strong> Array </strong></h1>
+  
+        <h3>Array</h3>
+        <p>Array is a collection of data elements, all of same data type, accessed using a common name. Array
+            elements are placed in contiguous memory location. Array is one type of data structure that can store a
+            fixed-size sequential collection of items of the same type. An array is a variable that can store multiple
+            values.
+        </p>
+        <img class="img-fluid" src="img/Array12.png" alt="Array structure">
+
+        <h5>Declaration:</h5>
+        <p class="2">To declare array in C, a programmer specifies the data type of items, array name and numbers of
+            items
+            required by an array as follows - <br>
+        <h6>One dimensional array:</h6>
+        <div class="row">
+            <div class="col-md-6">
+                <pre class="pre-bl">type arrayname[arraysize];</pre>
+            </div>
+        </div>
+     
+        <br>This is single-dimentional array. Array size must be positive integer. <br>
+        <br>
+        <h6>Two dimensional array:</h6>
+        <div class="row">
+            <div class="col-md-6">
+                <pre class="pre-bl">type arrayname[i][j];</pre>
+            </div>
+        </div>
+     
+        <br>here: i= numbers of rows and j= numbers of columns
+        <br>This is called 2-Dimentional array. 2D array represent matrices.
+        <br><b>Example:</b>
+        <ul>
+            <li>int a[5];</li>
+            <li>int a[3][2];</li>
+        </ul>
+
+        <h5>Types of array:</h5>
+        <p>In C programming language, there is two type of array-</p>
+        <ol>
+            <li>One dimentional(1-D) Array</li>
+            <li>Two dimentional(2-D) Array or Multi-Dimentional array</li>
+        </ol>
+
+        <h4>Advantages of array:</h4>
+        <ol>
+            <li> Array represent multiple data elements of the same type using a single name.</li>
+            <li>In arrays, the elements can be accessed randomly by using the index number.</li>
+            <li> Array consist of contiguous memory locations therefore there is no chance of extra memory being
+                allocated in case of arrays</li>
+            <li>2D Array is used to represent matrices.</li>
+            <li> Using arrays, we can implement other data structure like stack, queues, linked list, trees,
+                graphs etc.</li>
+        </ol>
+
+        <h4>Disadvantages of Array:</h4>
+        <ol>
+            <li> Using arrays, we can implement other data structure like stack, queues, linked list, trees,
+                graphs etc.</li>
+            <li>Allocating more memory than the requirement leads to wastage of memory and less allocation of memory
+                leads problem.</li>
+            <li>Insertion and deletion quit difficult in an arrays.</li>
+            <li> The array is homogeneous(means only one type of value can be store in the array.</li>
+        </ol>
+        <h4>Applications:</h4>
+        <ul>
+            <li> A basic application of arrays can be storing data in tabular format.</li>
+            <li> 2D arrays known as matrix,are used in image processing.</li>
+            <li> Arrays can be used for CPU scheduling.</li>
+            <li> Arrays are used to implement mathematical vectors, matrices and rectangular table.</li>
+            <li>Arrays are used to implement data structures like stack, queue, linked list, trees, graphs etc.</li>
+        </ul>
+
+        <h4>Sample Programs</h4>
+
+
+        <div class="col-md-8">
+
+            <h5 class="hed-m">1. Initialization of 1-D array at compile time</h5>
+            <pre class="pre-bl" title="compile time initialization">
+                // Print the elements stored in the array
+                <span class="hljs-meta">
+                 
+                <span class="hljs-meta-keyword">#include&lt;stdio.h&gt;</span> 
+                <span class="hljs-meta-keyword">#include&lt;conio.h&gt;</span> 
+            </span>
+            
+            
+                void main()
+                 {
+                    int a[5]={1,2,3,4,5};
+                    clrscr();
+                 
+                    // printing elements of an array
+    
+                    for(int i = 0; i < 5; i++) 
+                    {
+                        printf("%d\n", a[i]);
+                    }
+                    getch();
+                }</pre>
+            <h6>output:</h6>
+            <pre class="pre-bl" title="">
+                1
+                2
+                3
+                4
+                5
+            </pre>
+        </div>
+  
+        <div class="col-md-8">
+            <h5 class="hed-m">2. Initialization of 1-D array at run time </h5>
+            <pre class="pre-bl" title="Run time Initialization">
+            // Print the elements stored in the array
+            
+            <span class="hljs-meta">
+                 
+                <span class="hljs-meta-keyword">#include&lt;stdio.h&gt;</span> 
+                <span class="hljs-meta-keyword">#include&lt;conio.h&gt;</span> 
+            </span>
+                 void main()
+                  {
+                       int a[5];
+                       clrscr();
+                 
+                       printf("Enter 5 elements in the array/n");
+                       scanf("&d", &a[i]);
+                 
+                   // taking input and storing it in an array
+              
+                       for( i = 0; i < 5; i++) {
+                       scanf("%d", &a[i]);
+                       }
+                
+                       printf("Displaying array elements/n");
+            
+                       // printing elements of an array
+                
+                       for(int i = 0; i < 5; i++) 
+                       {
+                             printf("%d\n", a[i]);
+                       }
+                       getch();
+                   }
+            </pre>
+            <h6>Output:</h6>
+            <pre class="pre-bl" title="">
+                Enter 5 elements in the array
+                10
+                20
+                30
+                40
+                50
+                Displaying array elements
+                10
+                20
+                30
+                40
+                50
+            </pre>
+        </div>
+ 
+        <div class="col-md-8">
+            <h5 class="hed-m">3.Sum of array 1-D elements</h5>
+            <pre class="pre-bl" title="Sum of array elements">
+//Print sum of array elements
+ <span class="hljs-meta">              
+    <span class="hljs-meta-keyword">#include&lt;stdio.h&gt;</span> 
+</span>  
+    int main()
+        {
+           int array[5];
+           int sum, i;
+           sum = 0;
+           printf("Enter values in 1-D array/n")
+           for(i = 0; i < 6; i++); 
+              {
+                 scanf("%d",array[i]);
+              }
+           for(i = 0; i < 6; i++) 
+              {
+                 sum = sum + array[i];      
+              }
+            
+           printf("Sum of array is %d", sum);   
+            
+           return 0;
+        }
+     </pre>
+            <h6>Output:</h6>
+            <pre class="pre-bl" title="">
+        Enter values in 1-D array
+        1
+        2
+        3
+        4
+        5
+        Sum of array is 15
+    </pre>
+        </div>
+    
+  
+
+        <div class="col-md-8">
+            <h5 class="hed-m">4. Initialization of 2-D array at compile time</h5>
+            <pre class="pre-bl" title="">
+            //program for compile time array initialization
+<span class="hljs-meta">
+             
+            <span class="hljs-meta-keyword">#include&lt;stdio.h&gt;</span> 
+</span>
+
+            void main()
+            {
+              int a[2][2]={{1,2},{3,4}};
+              int i,j;
+
+              printf(“Array elements are\n”);
+
+              for(i=0;i&lt;2;i++)
+                {
+                   for(j=0;j&gt;2;j++)
+                     {
+                       printf(“%d\n”,a[i][j]);
+                     }
+                }
+               return 0;
+ 
+            }
+          </pre>
+            <h6>Output:</h6>
+            <pre class="pre-bl" title="">
+        Array elements are
+               1   2
+               3   4
+</pre>
+        </div>
+    
+
+        <div class="col-md-8">
+            <h5 class="hed-m">5. Initialization of 2-D array at run time</h5>
+            <pre class="pre-bl" title="">
+        //  Print the elements stored in the array
+<span class="hljs-meta">
+         
+        <span class="hljs-meta-keyword">#include&lt;stdio.h&gt;</span> 
+</span>
+
+         void main()
+         {
+          int a[2][2];
+          int i,j;
+
+          printf(“Enter the array elements \n”);
+
+          for(i=0;i&lt;2;i++)
+            {
+            for(j=0;j&lt;2;j++)
+              {
+                scanf(“%d”,&a[i][j]);
+              }
+            }
+          printf(“Array elements are \n”);
+
+           for(i=0;i&lt;2;i++)
+              {
+
+                for(j=0;j&lt;2;j++)
+                  {
+                    printf(“%d\n”,a[i][j]);
+                  }
+               }
+
+            return 0;  
+          }
+
+</pre>
+            <h6>Output:</h6>
+            <pre class="pre-bl" title="">
+       Enter the array elements
+       5
+       6
+       7
+       8
+       Array elements are
+       5   6   
+       7   8
+</pre>
+        </div>
+    
+
+        <h5>Examples For Practice</h5>
+        <ol>
+            <li>Implement C program to find smallest element in a 1-D array</li>
+            <li>Implement C program to find the average of N elements of 1-D array. (Read N from user).</li>
+            <li>Implement C program to find the sum of all elements in a 2-D array.</li>
+            <li>Implement C program to display even and odd numbers from given 2-D array</li>
+        </ol>
+    
+    
+    <a href="http://127.0.0.1:5500/function.html"> <button type="button" class="btn btn-primary btn-m"> &lt;&lt;Previous</button> </a>
+    <a href="http://127.0.0.1:5500/array.html"> <button type="button" class="btn  btn-primary btn-m btn-r">Next &gt;&gt;</button></a> 
+
+  </div>
+</div>
+ 
+  <footer class="page-footer font-small blue navbar-dark bg-light footer-ptt">
+      <div class="footer-copyright text-center py-3">
+          Designed and built with all the love in the world by the <a href="http://127.0.0.1:5500/about.html">CodingElite team</a>.&nbsp;| <a class="color-b" href="http://127.0.0.1:5500/privacyPolicy.html">Privacy policy</a> | <a class="color-b" href="http://127.0.0.1:5500/contact.html">Contact us</a>
+         
+      </div>
+    </footer>
+    
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+  -->
+</body>
+
+</html>

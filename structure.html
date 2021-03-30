@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>CodingElite</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="http://127.0.0.1:5500/home.html">CodingElite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="http://127.0.0.1:5500/home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://127.0.0.1:5500/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            C Tutorials
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/introduction.html">introduction</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/branching.html">Branching Statements</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/looping.html">looping statements</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/function.html">Function</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/array.html">Array</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/string.html">string</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/pointer.html">pointers</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/structure.html">structures</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/blog.html">More Topics</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://127.0.0.1:5500/book.html">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://127.0.0.1:5500/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://127.0.0.1:5500/contact.html">Contact us</a>
+                    </li>
+                   
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+<div class="bg-light">
+  <div class="container bg-c">
+        <h1 class="hed hedi-h1"><strong> Structure </strong></h1>
+    
+        <h3>What is Structure in C?</h3>
+        <p>Structure is user defined datatype in C language which allows us to combine data of different types together.
+            structure somewhat similar to the array. but array is the collection of the homogeneous elements. and
+            structure consist of the collection of the heterogeneous elements.
+        </p>
+    
+        <h4>Structure Defination in C(Declaration)</h4>
+        <p>For creating a structure <b>struct</b> keyword is used.</p>
+        <h5>Syntax of structure in C:</h5>
+        <div class="row">
+            <div class="col-md-6">
+                <pre class="pre-bl">
+             struct structure_name
+             {
+              data_type member1;
+              data_type member2;
+              .
+              .
+              data_typen memebern;
+             };   </pre>
+            </div>
+        </div>
+        <p>We can create the structure for a student as mentioned above as:</p>
+        <h5>Example:</h5>
+        <div class="row">
+            <div class="col-md-6">
+                <pre class="pre-bl">
+             struct student
+            {
+             char name[50];
+             int Roll_No;
+             float Marks;
+            };
+         </pre>
+            </div>
+        </div>
+
+        <h4>Structure variable declaration</h4>
+        <p>When a structure is defined, it creates a user-defined type but, no storage is
+            allocated. For the above structure of student, variable can be declared as:
+        </p>
+        <div class="row">
+            <div class="col-md-6">
+                <pre class="pre-bl">
+             struct student
+             {
+              char name[50];
+              int Roll_No;
+              float Marks;
+             };
+
+             inside a main function
+             struct person s1, s2, s[20];  </pre>
+            </div>
+        </div>
+        <p>Another way of creating structure</p>
+        <div class="row">
+            <div class="col-md-6">
+                <pre class="pre-bl">
+              struct student
+              {
+               char name[50];
+               int Roll_No;
+               float Marks;
+              }s1 ,s2 ,s[20];
+          </pre>
+            </div>
+        </div>
+        <p>In both cases, 2 variables s1, s2 and array p having 20 elements of type
+            struct person are created.</p>
+
+        <h4>Accessing members of a structure</h4>
+        <p>There are two types of operators are used to accessing the member of structure</p>
+        <ol>
+            <li>Member operator(.)</li>
+            <li>Structure pointer operator(->)</li>
+        </ol>
+        <p>Any member of a structure can be accessed as:</p>
+        <div class="row">
+            <div class="col-md-6">
+                <pre class="pre-bl">structure_variable_name.member_name</pre>
+            </div>
+        </div>
+        <p>Suppose we want access the Marks for variable s2. then it can be accessed as:</p>
+        <div class="row">
+            <div class="col-md-6">
+                <pre class="pre-bl">s2.Marks</pre>
+            </div>
+        </div>
+
+  
+        <h4>Initialization of Structure</h4>
+        <p>There are two types of the structure initialization:</p>
+        <ol>
+            <li>Compile time initialization</li>
+            <li>Run time initialization</li>
+        </ol>
+        <h5>1.compile time initialization</h5>
+        <h6>Sample program to implement structure at compile time</h6>
+        <div class="col-md-8">
+            <pre class="pre-bl" title="">
+         <span class="hljs-meta">
+                  
+             <span class="hljs-meta-keyword">#include&lt;stdio.h&gt;</span> 
+             <span class="hljs-meta-keyword">#include&lt;conio.h&gt;</span> 
+         </span>
+              struct student
+              {
+              char name[20];
+              int rollno;
+              float marks;
+              }s{"xyz", 4, 560};
+
+              void main()
+              {
+              clrscr();
+              printf("\nStudent Name\tRollno\tMarks\n");
+              printf("%s\t%i\t%f", s.name, s.rollno, s.marks);
+              printf("\n");
+              printf("%s\t%i\t%f",s.name,s.rollno,s.marks);
+              getch();
+              }                   </pre>
+            <p><b>Output:</b></p>
+            <pre class="pre-bl">
+            Student Name   Rollno    Marks
+              xyz            4        560        </pre>
+        </div>
+        <h5>2.Run time initialization</h5>
+        <h6>Sample program to implement structure at run time</h6>
+        <div class="col-md-8">
+            <pre class="pre-bl" title="">
+         <span class="hljs-meta">
+                  
+          <span class="hljs-meta-keyword">#include&lt;stdio.h&gt;</span> 
+          <span class="hljs-meta-keyword">#include&lt;conio.h&gt;</span> 
+         </span>
+           struct student
+           {
+           char name[20];
+           int rollno;
+           float marks;
+           };
+           void main()
+           {
+           struct student s;
+           clrscr();
+           printf("Enter student Name, Rollno, Marks:\n");
+           scanf("%s%i%f", s.name, &s.rollno, &s.marks);
+           printf("\nStudent Name\tRollno\tMarks\n");
+           printf("%s\t%i\t%f", s.name, s.rollno, s.marks);
+           getch();
+           }
+         </pre>
+            <p><b>Output:</b></p>
+            <pre class="pre-bl">
+             Enter student name, Rollno, marks
+             xyz
+             4
+             560
+             Student Name   Rollno    Marks
+             xyz            4        560         </pre>
+        </div>
+  
+
+        <h5>Sample program of structure</h5>
+        <h6>1.Define structure Cricket_Team having element player_name, age, score_in_ODI. <br>
+            - Declare and do Initialization the structure for 5 cricketers by taking input at run time <br>
+            - Display the information of all cricketers. <br>
+        </h6>
+        <div class="col-md-8">
+            <pre class="pre-bl">
+         <span class="hljs-meta">
+     
+             <span class="hljs-meta-keyword">#include&lt;stdio.h&gt;</span> 
+             <span class="hljs-meta-keyword">#include&lt;conio.h&gt;</span> 
+         </span>
+             struct cricket
+              {
+               char name[20];
+               int age;
+               int score;
+              };
+              void main()
+              {
+               int i;
+               struct cricket c[2];
+               clrscr();
+               for(i=0;i&lt;2;i++)
+               {
+                printf("Enter the name of the player:");
+                scanf("%s",c[i].name);
+                printf("Enter age:");
+                scanf("%d",&c[i].age);
+                printf("Enter score in ODI:");
+                scanf("%d",&c[i].score);
+               }
+               printf("Entered data is:\n");
+               for(i=0;i&lt;2;i++)
+               {
+                printf("Name of the player:%s\n",c[i].name);
+                printf("Age:%d\n",c[i].age);
+                printf("Score in ODI:%d\n",c[i].score);
+               }
+              getch();
+            }
+     </pre>
+            <p><b>Output:</b></p>
+            <pre class="pre-bl">
+        Enter the name of the player:
+        abc
+        Enter age:
+        20
+        Enter score in ODI:
+        750
+
+        Enter the name of the player:
+        xyz
+        Enter age:
+        22
+        Enter score in ODI:
+        678
+
+        Entered data is:
+        Name of the player:abc
+        Age:20 
+        Scorein ODI:750
+
+        Entered data is:
+        Name of the player:xyz
+        Age:22
+        Scorein ODI:678
+     </pre>
+        </div>
+
+        <h4>Passing a structure to function</h4>
+        <p>There are three methods to pass structure to function</p>
+        <ol>
+            <li>Pass each member of structure as actual parameter to function call.</li>
+            <li>Passing copy of the entire structure to the called function.</li>
+            <li>Pass Pointer of structure as argument to function.</li>
+        </ol>
+        <h5>1.Pass each member of structure as actual parameter to function call.</h5>
+        <ul>
+            <li>The actual arguments are then treated independently like ordinary
+                variables.</li>
+            <li>This method is unmanageable and inefficient when the structure
+                size is large</li>
+        </ul>
+        <h6>Sample program</h6>
+        <div class="col-md-8">
+            <pre class="pre-bl">
+         <span class="hljs-meta">
+     
+         <span class="hljs-meta-keyword">#include&lt;stdio.h&gt;</span> 
+         <span class="hljs-meta-keyword">#include&lt;conio.h&gt;</span> 
+         </span>
+         struct student
+         {
+          char name;
+          int rollno;
+          float marks;
+         };
+         struct student std_func(char, int, float);
+
+         int main()
+         {
+          struct student s1 = {'xyz', 10, 570};
+          clrscr();
+          std_func(s1.name, s1.rollno, s1.marks);
+          getch();
+         }
+
+         struct student std_func(char name, int rollno, float marks)
+         {
+          printf("Name\tRoll No.\tMarks\n");
+          printf("%c\t%d\t\t%f", name, rollno, marks);
+         }
+     </pre>
+            <p><b>Output:</b></p>
+            <pre class="pre-bl">
+                Name Roll No. Marks
+                xyz   10   570.000000    </pre>
+        </div>
+
+        <h5>2.Passing copy of the entire structure to the called function.</h5>
+        <ul>
+            <li>Since the function is working on a copy of the structure.</li>
+            <li>Any changes to structure within the function are not reflected in the original structure (in the calling
+                function).</li>
+            <li>It is therefore, necessary for the function to return the entire structure back to the calling function.
+            </li>
+            <li>All compilers may not support this method. </li>
+
+        </ul>
+        <h6>Sample program</h6>
+        <div class="col-md-8">
+            <pre class="pre-bl">
+         <span class="hljs-meta">
+     
+         <span class="hljs-meta-keyword">#include&lt;stdio.h&gt;</span> 
+         <span class="hljs-meta-keyword">#include&lt;conio.h&gt;</span> 
+         </span>
+         void modify(struct student s);
+         struct student
+         {
+          int roll_no;
+          float marks;
+         };
+
+         void main()
+         {
+          struct student s;
+          clrscr();
+          printf("\nEnter roll_no and marks:\n");
+          scanf("%d%f", &s.roll_no, &s.marks);
+          modify(s);
+          printf("\nafter modificattion in main:\n");
+          printf("%d\t%2f", s.roll_no, s.marks);
+          getch();
+         }
+
+         void modify(struct student s)
+         {
+          printf("\nmodify the marks");
+          scanf("%f",&s.marks);
+          printf("\nafter modificattion in function:\n");
+          printf("%d\t%2f", s.roll_no,s.marks);
+         }
+     </pre>
+            <p><b>Output:</b></p>
+            <pre class="pre-bl">
+                Enter roll_no and marks:
+                2
+                70.40
+                modify the marks89.90
+                after modificattion in function:
+                1 89.900000
+                after modificattion in main:
+                1 70.400000  </pre>
+        </div>
+
+        <h5>3.Pass Pointer of structure as argument to function.</h5>
+        <ul>
+            <li>Third approach employs a concept called pointer to pass the structure as an argument.</li>
+            <li>In this case, the address location of the structure is passed to the called function.</li>
+            <li>The function can access indirectly the entire structure and work on it.</li>
+            <li>This method is more efficient as compared to the second one.</li>
+        </ul>
+  
+
+        <div class="table-responsive">
+            <table summary="List of the data types and the rages." border="0">
+
+                <table>
+                    <tr>
+                        <th class="tabal-b tabal-c"><b> Basis for Comparison</b></th>
+                        <th class="tabal-b tabal-c"><b> Array</b></th>
+                        <th class="tabal-b tabal-c"><b> Structure</b></th>
+
+                    </tr>
+                    <tr>
+                        <td class="tabal-b">Basic </td>
+                        <td class="tabal-b">An array is a collection of variables of same data type.</td>
+                        <td class="tabal-b">A structure is a collection of variables of different data type.</td>
+                    </tr>
+                    <tr>
+                        <td class="tabal-b">Syntax</td>
+                        <td class="tabal-b">Syntax type array_name[size] </td>
+                        <td class="tabal-b">struct sruct_name{ <br> type element1; <br> type element1; <br>. <br> . <br>
+                            } variable1, variable2, . .; </td>
+
+                    </tr>
+                    <tr>
+                        <td class="tabal-b">Memory</td>
+                        <td class="tabal-b">Array elements are stored in contiguous memory location.</td>
+                        <td class="tabal-b">Structure elements may not be stored in a contiguous memory location.</td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="tabal-b">Access</td>
+                        <td class="tabal-b">Array elements are accessed by their index number.</td>
+                        <td class="tabal-b">Structure elements are accessed by their names.</td>
+                    </tr>
+                    <tr>
+                        <td class="tabal-b">Operator </td>
+                        <td class="tabal-b">Array declaration and element accessing operator is "[ ]" (square bracket).
+                        </td>
+                        <td class="tabal-b">Structure element accessing operator is "." (Dot operator).</td>
+                    </tr>
+                    <tr>
+                        <td class="tabal-b">Pointer</td>
+                        <td class="tabal-b">Array name points to the first element in that array so, array name is a
+                            pointer.</td>
+                        <td class="tabal-b">Structure name does not point to the first element in that structure so,
+                            structure name is not a pointer.</td>
+                    </tr>
+                    <tr>
+                        <td class="tabal-b">Size </td>
+                        <td class="tabal-b">Every element in array is of same size.</td>
+                        <td class="tabal-b">Every element in a structure is of different data type.</td>
+                    </tr>
+                    <tr>
+                        <td class="tabal-b">Keyword </td>
+                        <td class="tabal-b">There is no keyword to declare an array.</td>
+                        <td class="tabal-b">"struct" is a keyword used to declare the structure.</td>
+                    </tr>
+                    <tr>
+                        <td class="tabal-b">User-defined</td>
+                        <td class="tabal-b">Arrays are not user-defined they are directly declared</td>
+                        <td class="tabal-b">Structure is a user-defined datatype.</td>
+                    </tr>
+                </table>
+            </table>
+        </div>
+   
+
+        <h5>Examples For Practice</h5>
+        <ol>
+            <li>Write a program to <br>
+                -Define the structure student having member’s rollno, name, address, marks. <br>
+                - Initialize the structure for single student by taking input at compile time <br>
+                - Display the information
+            </li>
+            <li>Write a program to <br>
+                -Definethe structure book having members book_id ,title, author, price. <br>
+                - Initialize the structure for single book by taking input at run time <br>
+                - Display the information
+            </li>
+        </ol>
+    
+        <a href="http://127.0.0.1:5500/pointer.html"> <button type="button" class="btn btn-primary btn-m"> &lt;&lt;Previous</button> </a>
+        <a href="http://127.0.0.1:5500/blog.html"> <button type="button" class="btn  btn-primary btn-m btn-r">Next &gt;&gt;</button></a> 
+    
+      </div>
+    </div>
+     
+      <footer class="page-footer font-small blue navbar-dark bg-light footer-ptt">
+          <div class="footer-copyright text-center py-3">
+              Designed and built with all the love in the world by the <a href="http://127.0.0.1:5500/about.html">CodingElite team</a>.&nbsp;| <a class="color-b" href="http://127.0.0.1:5500/privacyPolicy.html">Privacy policy</a> | <a class="color-b" href="http://127.0.0.1:5500/contact.html">Contact us</a>
+             
+          </div>
+        </footer>
+        
+      <!-- Optional JavaScript; choose one of the two! -->
+    
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+          crossorigin="anonymous"></script>
+    
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+      -->
+    </body>
+    
+    </html>

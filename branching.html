@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>CodingElite</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="http://127.0.0.1:5500/home.html">TechnicalAB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="http://127.0.0.1:5500/home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://127.0.0.1:5500/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            C Tutorials
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/introduction.html">introduction</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/branching.html">Branching Statements</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/looping.html">looping statements</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/function.html">Function</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/array.html">Array</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/string.html">string</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/pointer.html">pointers</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/structure.html">structures</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/blog.html">More Topics</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://127.0.0.1:5500/book.html">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://127.0.0.1:5500/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://127.0.0.1:5500/contact.html">Contact us</a>
+                    </li>
+                   
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+<div class="bg-light">
+    <div class="container bg-c">
+        <h1 class="hed hedi-h1"><strong> Branching statements</strong></h1>
+    
+    
+        <h3>Branchinng statements in C</h3>
+        <p>A branching statements is also known as selection of control statements. <br> C languagec executes the
+            program statements in a sequence,branching statements are used to the alter the flow of the sequence of
+            statements. branching statements also known as control statements. prgrammer can jump from one part of the
+            program to other with the help of branching statements.
+        </p>
+        <h5><b>Branching statements are as follows:</b></h5>
+        <ol>
+            <li><b> if statement </b></li>
+            <li><b> if else statement</b></li>
+            <li><b> nested if </b></li>
+            <li><b> if else ladder</b></li>
+            <li><b> switch case </b></li>
+        </ol>
+    
+    
+        <h4><b>1.&nbsp; if statement</b></h4>
+        <h6>syntax of if statement:</h6>
+        <div class="row">
+            <div class="col-md-6">
+        <pre class="pre-bl">
+            if (condition) 
+            { 
+            //body of if statement 
+            statements;
+            } 
+        </pre>
+            </div>
+        </div>
+        <p>in "if" statement, respective block of code is executed when condition is true.</p>
+
+    
+        <h5>Sample program</h5>
+        <h6>Enter any two numbers and check which number is maximum between these two.</h6>
+        <div class="col-md-8">
+            <pre class="pre-bl" title="">
+     <span class="hljs-meta">
+              
+         <span class="hljs-meta-keyword">#include&lt;stdio.h&gt;</span> 
+         <span class="hljs-meta-keyword">#include&lt;conio.h&gt;</span> 
+     </span>
+         void main()
+         {
+           int a, b;
+           printf(“Enter the frist number\n”);
+           scanf(“%d ”,&a);
+           printf(“Enter the second number\n”);
+           scanf(“%d ”,&b);
+
+          if(a>b)
+           {
+             printf(“a is max and value of max is %d”, a);
+           }
+          else
+           {
+             printf(“b is max and value of max is %d”, b);
+           }
+          getch();
+        }
+         
+     </pre>
+     <p><b>Output-</b></p>
+     <pre class="pre-bl" title="">
+         Enter the frist numbers
+         14
+         Enter the second number
+         27
+         b is max and value of max is 27
+                
+                </pre>
+        </div>
+    
+   
+    
+        <h4><b>2.&nbsp; if else statement</b></h4>
+        <h6>syntax of if else statement:</h6>
+        <div class="row">
+            <div class="col-md-6">
+          <pre class="pre-bl">
+          if (condition) 
+          { 
+            //body of if statement 
+            statements;
+          } 
+          else 
+          { 
+            //body of else statement   
+          } 
+          </pre>
+            </div>
+        </div>
+      
+        <p>in "if else " statement, if block of code is executed when condition is true, otherwise else block of code executed.</p>
+
+    
+        <h5>Sample program</h5>
+        <h6>Check wheather the entered number is odd or even.</h6>
+
+        <div class="col-md-8">
+            <pre class="pre-bl" title="">
+     <span class="hljs-meta">
+              
+         <span class="hljs-meta-keyword">#include&lt;stdio.h&gt;</span> 
+         <span class="hljs-meta-keyword">#include&lt;conio.h&gt;</span> 
+     </span>
+                
+                        
+         void main()
+         {
+           int n;
+           printf(“Enter the number\n”);
+           scanf(“%d ”,&n);
+
+          if(n%2==0)
+           {
+             printf(“Entered number is even”);
+           }
+          else
+           {
+             printf(“Entered number is odd”);
+           }
+          getch();
+        }
+         
+     </pre>
+     <p><b>Output-</b></p>
+     <pre class="pre-bl" title="">
+         Enter the  number
+         14
+         Entered number is even
+                  
+                </pre>
+        </div>
+    
+
+        <h4><b>3.&nbsp;nested if else statement</b></h4>
+        <h6>syntax of nested if else :</h6>
+        <div class="row">
+            <div class="col-md-6">
+        <pre class="pre-bl">
+            if(condition1) 
+            {
+            //body of else Statements; 
+                       
+              if(condition2) 
+              { 
+                if(condition3) 
+                { 
+                //body of if Statements; 
+                } 
+                else 
+                { 
+                  Statements; 
+                } 
+              else 
+              {	
+                //body of else Statements; 
+              } 
+            else 
+            {   
+              //body of else Statements; 
+            } 
+        </pre>
+            </div>
+        </div>
+        
+        <p>In “nested if else ”  statement, if condition 1 is false, then condition 2 is checked and if  condition 2 is true then statements of that respective if bock are executed. <br>
+            If condition 2 also gets false, then else part is executed.
+            </p>
+
+
+        <h5>Sample program</h5>
+        <h6>Write a program to find the type of a triangle.</h6>
+
+        <div class="col-md-8">
+            <pre class="pre-bl" title="">
+     <span class="hljs-meta">
+              
+        <span class="hljs-meta-keyword">#include&lt;stdio.h&gt;</span> 
+        <span class="hljs-meta-keyword">#include&lt;conio.h&gt;</span> 
+     </span>
+                
+     
+        void main()
+        {
+         float  a, b, c;
+         clrscr();
+         printf(“Enter the three sides of a triangle\n”);
+         scanf(“ %f %f %f”, &a, &b, &c);
+         printf(“ The  given sides  are  \n”);
+         printf(“% 8.2f  %8.2f   %8.2f  \n”, a, b, c);
+         if(((a+b) > c)  &&  ((a+c) > b)  && ((b+c) > a))
+          {
+            if(((a==b) && (a==c))
+             {
+              printf(“Equilateral  triangle  \n”);
+             }
+            else 
+             {
+               if((a==b)   !!  (a==c)  !!  (b==c))
+               {
+                 printf(“Isosceles  triangle  \n  ”);
+               }
+               else
+               {
+                printf(“ Simple  triangle  \n”);
+               }
+            }
+         }
+        else
+         {
+           printf(“Triangle is not possible”);
+         }
+        getch();
+        }
+            
+     </pre>
+     <p><b>Output-</b></p>
+     <pre class="pre-bl" title="">
+        Enter the three sides of a triangle
+        3.0
+        3.0
+        3.0
+        The given sides are 3.0  3.0  3.0
+        Equilateral  triangle  
+
+                </pre>
+        </div>
+   
+
+        <h4><b>4.&nbsp;  if else if ladder</b></h4>
+        <h6>syntax of if else if ladder statement:</h6>
+        <div class="row">
+            <div class="col-md-6">
+        <pre class="pre-bl">
+        if (condition1) 
+        {	
+        Statement1;
+        }
+        else if (condition2) 
+        {
+        Statement2;
+        }
+        else if (condition3) 
+        {
+        Statement3; 
+        }
+        .
+        .
+        else    
+        {
+        Default Statement; 
+        }
+        </pre>
+            </div>
+        </div>
+     
+        <p>In “if else if ladder” every if statement having condition, if that condition get executed and result of condition is true then body of respective if block get executed and runtime cursor get of that if else if ladder and next statement after that ladder get executed.</p>
+
+   
+        <h5>Sample program</h5>
+        <h6>Implement a program to print the week day using if else if ladder.</h6>
+        <div class="col-md-8">
+            <pre class="pre-bl" title="">
+     <span class="hljs-meta">
+              
+         <span class="hljs-meta-keyword">#include&lt;stdio.h&gt;</span> 
+         <span class="hljs-meta-keyword">#include&lt;conio.h&gt;</span> 
+     </span>
+          void main()
+          {
+          int day ;
+          clrscr();
+          printf(“Enter the week day number  between 1  to7  \n”);
+          scanf(“%d ”,&day);
+          if(day==1) {
+              printf(“\n Week day  is  Monday”);}
+          else if(day==2){
+              printf(“\n Week day is Tuesday”);}
+          else if(day==3) {
+              printf(“\n Week day is Wednesday”);}
+          else if(day==4){
+              printf(“\n Week day is Thursday”); }
+          else if(day==5){
+              printf(“\n Week day is Friday”); }
+          else if(day==6) {
+              printf(“\n Week day is Saturday”); }
+          else if(day==7) {
+              printf(“\n Week day is Sunday”); }
+          else {
+                   printf(“\n Wrong  choice. Please enter correct week day.”); }
+          } 
+      
+     </pre>
+     <p><b>Output-</b></p>
+     <pre class="pre-bl" title="">
+        Enter the week day number  between 1  to7 
+        4
+        Week day is Thursday
+      
+                </pre>
+        </div>
+
+
+        <h4><b>5.&nbsp; switch case statement</b></h4>
+        <h6>syntax of switch case statement:</h6>
+        <div class="row">
+            <div class="col-md-6">
+       <pre class="pre-bl">
+           switch(control  expression) 
+           { 
+            case constant1 :  
+            statements; 
+             break; 
+            case constant2 : 
+            statements; 
+             break; 
+             
+             ……… 
+             ……… 
+            default : 
+            statements;
+           } 
+       </pre>
+            </div>
+        </div>
+   
+        <p> In switch case statement, there is no condition instead of that there is control expression. If control expression value does not match with any of case constant then last default case get executed. Here case ends with break statement. break statement breaks current switch case and cursor goes out of switch case. <br>Switch case statements are used to execute only specific case statements based on the switch expression </p>
+
+    
+
+        <h5>Sample program</h5>
+        <h6>Implement a program to print the week day using if else if ladder.</h6>
+        <div class="col-md-8">
+            <pre class="pre-bl" title="">
+     <span class="hljs-meta">
+              
+         <span class="hljs-meta-keyword">#include&lt;stdio.h&gt;</span> 
+         <span class="hljs-meta-keyword">#include&lt;conio.h&gt;</span> 
+     </span>
+          void main()
+          {
+            int n;
+            clrscr();
+            printf("Enter the number of day\n");
+            scanf("%d",&n);
+
+            switch(a)
+            {
+              case 1:
+              printf("the day is monday");
+              break;
+              case 2:
+              printf("the day is tuesday");
+              break;
+              case 3:
+              printf("the day is wensday");
+              break;
+              case 4:
+              printf("the day is thrusday");
+              break;
+              case 5:
+              printf("the day is friday");
+              break;
+              case 6:
+              printf("the day is saturday");
+              break;
+              case 7:
+              printf("the day is sunday");
+              break;
+              default:
+              printf("enter correct number");
+           }
+          getch();
+          }
+     
+      
+     </pre>
+     <p><b>Output-</b></p>
+     <pre class="pre-bl" title="">
+        Enter the number of day 
+        4
+        the day is thursday
+      
+                </pre>
+        </div>
+    
+
+        <h5>Examples For Practice</h5>
+        <ol>
+            <li>Check whether user entered character is vowel or consonant.</li>
+            <li>Input three numbers and find maximum between them.</li>
+            <li>Implement a program to perform mathematical calculation i.e +,-,*,/ (Take input & operator from user and by using else if ladder perform operation).</li>
+            <li> Write a C program to check whether a number is even or odd using switch case.</li>
+        </ol>
+
+
+
+
+
+
+    
+       <a href="http://127.0.0.1:5500/home.html"> <button type="button" class="btn btn-primary btn-m"> &lt;&lt;Previous</button> </a>
+      <a href="http://127.0.0.1:5500/looping.html"> <button type="button" class="btn  btn-primary btn-m btn-r">Next &gt;&gt;</button></a> 
+
+
+    </div>
+</div>
+   
+    <footer class="page-footer font-small blue navbar-dark bg-light footer-ptt">
+        <div class="footer-copyright text-center py-3">
+            Designed and built with all the love in the world by the <a href="http://127.0.0.1:5500/about.html">CodingElite team</a>.&nbsp;| <a class="color-b" href="http://127.0.0.1:5500/privacyPolicy.html">Privacy policy</a> | <a class="color-b" href="http://127.0.0.1:5500/contact.html">Contact us</a>
+           
+        </div>
+      </footer>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
